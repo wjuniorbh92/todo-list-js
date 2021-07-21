@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="/css/style-index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <script src="/js/storage-sort-todo.js"></script> 
+    <script defer src="/js/js-index.js"></script> 
+    <title>Todo App DevInHouse</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Todo App</h1>
+    </header>
+    <form>
+      <input
+        class="inputTodo"
+        type="text"
+        placeholder="Adicione uma nova Tarefa"
+      />
+      <button class="addButtom" type="submit">
+        <i class="fas fa-plus-square fa-2x"></i>
+      </button>
+    </form>
+
+    <div class="appContainer">
+      <ul class="todoListApp"></ul>
+    </div>
+    <div class="modal">
+      <div class='modalContent'>
+        <form>
+          <input class="inputModal" type="text" />
+        </form>
+        <button class='submitEdit'>Enter</button>
+      </div>
+    </div>
+  </body>
+</html>

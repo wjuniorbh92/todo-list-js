@@ -1,0 +1,132 @@
+/* Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+html {
+  background-color: #dde2ed;
+}
+body {
+  width: 100%;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  max-width: 30em;
+  margin: auto;
+  padding: 0.5em 1em;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; /*https://getcssscan.com/css-box-shadow-examples */
+}
+
+header,
+form {
+  display: flex;
+  min-height: 5vh;
+  justify-content: center;
+  align-items: center;
+  color: #00006c;
+}
+
+form input,
+form button {
+  padding: 0.8em;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  min-height: 2vh;
+  background: #dde2ed;
+}
+
+form input {
+  width: 100%;
+}
+
+form button {
+  cursor: pointer;
+  color: #1976d2;
+  border: none;
+  font-size: 1rem;
+}
+
+.appContainer {
+  display: block;
+  padding-top: 1rem;
+}
+
+.todo {
+  padding: 1rem;
+  border-bottom: 1px solid #172a3c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #00006c;
+  font-size: 1rem;
+}
+
+.todo li {
+  flex: 1;
+  list-style-type: none;
+}
+.todo i {
+  pointer-events: none;
+}
+
+.checkButton,
+.deleteButton,
+.editButton {
+  background-color: #dde2ed;
+  color: #1976d2;
+  padding: 0.2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.checkedItem {
+  text-decoration: line-through;
+  color: #6faae4;
+}
+
+form button:hover {
+  color: #6498e6;
+}
+.checkButton:hover {
+  color: #22ff00;
+}
+
+.deleteButton:hover {
+  color: #ff0000;
+}
+
+.editButton:hover {
+  color: #d02fc2;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #7986cb;
+}
+/*https://www.w3schools.com/howto/howto_css_modals.asp*/
+/* Vamos se sai um popup Form*/
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modalContent {
+  background-color: #fefefe;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
