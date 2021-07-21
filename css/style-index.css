@@ -7,6 +7,7 @@
 html {
   background-color: #dde2ed;
 }
+
 body {
   width: 100%;
   margin: auto;
@@ -39,7 +40,8 @@ form button {
 
 form input {
   width: 100%;
-  background: #e3dbdb;
+  background: #dde3ed;
+  outline: none;
 
 }
 
@@ -76,7 +78,8 @@ form button {
 .checkButton,
 .deleteButton,
 .editButton,
-.submitEdit {
+.submitEdit,
+.close {
   background-color: #dde2ed;
   color: #1976d2;
   padding: 0.2rem;
@@ -126,12 +129,7 @@ form button:hover {
   margin: auto;
   padding-top: 5rem;
 }
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
+
 /* Modal Content/Box */
 .modalContent {
   display: flex;
@@ -146,9 +144,10 @@ form button:hover {
   width: 50%; /* Could be more or less, depending on screen size */
 }
 
-.modalContent form{
+.modalContent form {
   flex: 1;
 }
+
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #7986cb;

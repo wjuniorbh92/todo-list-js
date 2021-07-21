@@ -1,6 +1,7 @@
 const addButtom = document.querySelector(".addButtom");
 const todoApp = document.querySelector(".todoListApp");
 const buttonEdit = document.querySelector(".submitEdit");
+const closeEditBtn = document.getElementsByClassName("close")[0];
 var editValueAux; // Variavel auxiliar para pegar o ID do Todo
 
 function renderApp(id, value, checked) {
@@ -76,7 +77,6 @@ function handleClickTodoApp(event) {
     }
   }
   if (item.classList[0] === "editButton") {
-
     const todo = item.parentElement;
     const idLi = item.parentElement.querySelector("li").id;
     editValueAux = idLi; // Pega o valor do ID para passar para a funçao de edit
@@ -86,26 +86,29 @@ function handleClickTodoApp(event) {
 
 function handleInputEdit() {
   const editInputValue = document.querySelector(".inputModal").value;
-  
-  if(editInputValue === ''){
+
+  if (editInputValue === "") {
     document.getElementsByClassName("modal")[0].style.display = "none";
-    return
+    return;
   }
-  
+
   const todo = item.parentElement;
   todo.querySelector("li").classList.remove("checkedItem");
   todo.querySelector("li").classList.add("unCheckedItem");
   todo.querySelector("li").innerText = editInputValue;
-  
+
   setLocalStorage(editValueAux, editInputValue, false);
   document.getElementsByClassName("modal")[0].style.display = "none";
-  document.querySelector(".inputModal").value = ''
+  document.querySelector(".inputModal").value = "";
 }
 
 addButtom.addEventListener("click", handleInputTask);
 todoApp.addEventListener("click", handleClickTodoApp);
-
 buttonEdit.addEventListener("click", handleInputEdit);
 
 window.onload = getAllLocalStorage();
 
+// When the user clicks on <span> (x), close the modal
+closeEditBtn.onclick = function () {
+  document.getElementsByClassName("modal")[0].style.display = "none";
+};
