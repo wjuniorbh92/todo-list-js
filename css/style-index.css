@@ -27,7 +27,9 @@ form {
   align-items: center;
   color: #00006c;
 }
-
+form {
+  border:1px solid #b6cdff
+}
 form input,
 form button {
   padding: 0.8em;
@@ -40,7 +42,7 @@ form button {
 
 form input {
   width: 100%;
-  background: #dde3ed;
+  background: #dde2ed;
   outline: none;
 
 }
