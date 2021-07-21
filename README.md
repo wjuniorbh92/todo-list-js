@@ -2,8 +2,9 @@
 
 ##  🇧🇷 PT-BR 
 Esse é um projeto usando o JavaScript de um Todo List, criado no curso FullStack DevInHouse do Senai
-
-Nesse projeto foi usado as seguintes tecnologias.
+Você pode acessar o projeto no GitHubPages : 
+https://wjuniorbh92.github.io/todo-list-js/
+Nesse projeto foi usado as seguintes tecnologias:
 
  - [x]  Usando uma fonte **Roboto** usando CDN.
  - [x] Usando icones do **font-awesome** .
@@ -15,7 +16,9 @@ Nesse projeto foi usado as seguintes tecnologias.
 ##  🇺🇸 EN-US
 This is a Todo List project, only using JavaScript, this is a challenge from the FullStack course on [Senai](https://en.wikipedia.org/wiki/SENAI) .
 
-Nesse projeto foi usado as seguintes tecnologias
+You can see de projeton on GitHubPages : 
+https://wjuniorbh92.github.io/todo-list-js/
+Nesse projeto foi usado as seguintes tecnologias:
  - [x]  Using a  **Roboto** fonts on CDN.
  - [x] Using a icons of **font-awesome** .
  - [x]  Using **LocalStorage** rom the browser to save the data of the TodoList items.

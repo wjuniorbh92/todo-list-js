@@ -27,9 +27,11 @@ form {
   align-items: center;
   color: #00006c;
 }
+
 form {
-  border:1px solid #b6cdff
+  border: 1px solid #b6cdff;
 }
+
 form input,
 form button {
   padding: 0.8em;
@@ -44,7 +46,6 @@ form input {
   width: 100%;
   background: #dde2ed;
   outline: none;
-
 }
 
 form button {
@@ -135,19 +136,20 @@ form button:hover {
 /* Modal Content/Box */
 .modalContent {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: auto;
   padding-top: 2rem;
-  width: 60%;
   background-color: #dde2ed;
   text-align: center;
-  padding: 20px;
+  padding: 1rem;
+  min-width: 20%; /* Ajuda com telas de celular */
   width: 50%; /* Could be more or less, depending on screen size */
+  flex-flow:column;
 }
 
-.modalContent form {
-  flex: 1;
+.close {
+  color:#f43e3e;
+  float: right;
+  padding-left: 1rem;
 }
 
 ::placeholder {
