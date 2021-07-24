@@ -103,7 +103,7 @@ form button {
   opacity: 1;
   animation-duration: 0.5s;
   animation-name: fade-in;
-  animation-timing-function:ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes fade-in {
@@ -129,7 +129,7 @@ form button:hover {
   color: #d02fc2;
 }
 
-.submitEdit:hover{
+.submitEdit:hover {
   color: #0400ff;
 }
 
@@ -172,9 +172,31 @@ form button:hover {
 }
 .close:hover {
   color: #ff0000;
-
 }
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #7986cb;
+}
+
+footer {
+  padding: 1.8rem 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desenvolvedor p {
+  font-size: 0.8rem;
+  color: #1976d2;
+}
+
+.social i {
+  color: #1976d2;
+  padding: 0.1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.social i:hover{
+  color: #df213bde;
+
 }
