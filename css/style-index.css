@@ -15,8 +15,10 @@ body {
   font-size: 20px;
   max-width: 30em;
   margin: auto;
-  padding: 0.5em 1em;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; /*https://getcssscan.com/css-box-shadow-examples */
+  padding: 1em 1em;
+  border-radius: 16px;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.3);
+  /*  https://getcssscan.com/css-box-shadow-examples */
 }
 
 header,
@@ -74,6 +76,7 @@ form button {
   flex: 1;
   list-style-type: none;
 }
+
 .todo i {
   pointer-events: none;
 }
@@ -93,9 +96,24 @@ form button {
 
 .checkedItem {
   text-decoration: line-through;
-  color: #6faae4;
+  opacity: 0.3;
 }
 
+.checkedItem:hover {
+  opacity: 1;
+  animation-duration: 0.5s;
+  animation-name: fade-in;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 form button:hover {
   color: #6498e6;
 }
@@ -110,14 +128,13 @@ form button:hover {
 .editButton:hover {
   color: #d02fc2;
 }
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #7986cb;
+
+.submitEdit:hover{
+  color: #0400ff;
 }
+
 /*https://www.w3schools.com/howto/howto_css_modals.asp*/
 /* Vamos se sai um popup Form*/
-
-/* Button used to open the contact form - fixed at the bottom of the page */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -136,22 +153,27 @@ form button:hover {
 /* Modal Content/Box */
 .modalContent {
   display: flex;
+  border-radius: 16px;
   margin: auto;
   padding-top: 2rem;
   background-color: #dde2ed;
   text-align: center;
   padding: 1rem;
+  padding-bottom: 2rem;
   min-width: 20%; /* Ajuda com telas de celular */
   width: 50%; /* Could be more or less, depending on screen size */
-  flex-flow:column;
+  flex-flow: column;
 }
 
 .close {
-  color:#f43e3e;
+  color: #f36363;
   float: right;
   padding-left: 1rem;
 }
+.close:hover {
+  color: #ff0000;
 
+}
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #7986cb;

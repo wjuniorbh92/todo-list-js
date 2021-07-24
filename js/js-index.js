@@ -30,7 +30,7 @@ function renderApp(id, value, checked) {
 
   todoDiv.appendChild(deleteButton);
   todoApp.appendChild(todoDiv);
-  checked ? liTodo.classList.add("checkedItem") : "";
+  checked ? liTodo.classList.add("checkedItem") : liTodo.classList.add("unCheckedItem");
 }
 
 function handleInputTask() {
