@@ -48,6 +48,7 @@ form input {
   width: 100%;
   background: #dde2ed;
   outline: none;
+  cursor:text;
 }
 
 form button {
